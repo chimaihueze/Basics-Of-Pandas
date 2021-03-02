@@ -20,4 +20,10 @@ print(myvar[1])
 # With the index argument, you can name your own labels.
 # Create you own labels:
 
-print(pd.Series(a, index = ['w', 'x', 'y', 'z']))
+myvar2 = pd.Series(a, index = ['w', 'x', 'y', 'z'])
+print(myvar2)
+
+# When you have created labels, you can access an item by referring to the label.
+# Return the value of "y":
+
+print(myvar2['y'])
