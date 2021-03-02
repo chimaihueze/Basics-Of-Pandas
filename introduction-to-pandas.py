@@ -16,6 +16,11 @@ print(my_var)
 
 print(pd.__version__)
 
+# I want to store passenger data of the Titanic.
+# For a number of passengers, I know the name (characters), age (integers) and sex (male/female) data.
+
+titanic = {'name': ["Braund, Mr. Owen Harris", "Allen, Mr. William Henry", "Bonnell, Miss. Elizabeth"], 'age': [22, 35, 58], 'sex': ["male", "male", "female"]}
+print(pd.DataFrame(titanic))
 
 
 
