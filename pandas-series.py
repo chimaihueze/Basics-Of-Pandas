@@ -35,3 +35,8 @@ print(myvar2['y'])
 calories = {'day1': '10', 'day2': '15', 'day3': '20'}
 my_cal = pd.Series(calories)
 print(my_cal)
+
+# To select only some of the items in the dictionary, use the index argument and specify only the items you want to include in the Series.
+# Create a Series using only data from "day1" and "day2":
+
+print(pd.Series(calories, index = ['day1', 'day2']))
