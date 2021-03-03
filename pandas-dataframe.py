@@ -20,3 +20,12 @@ print(my_data.loc[1])
 # Return rows 0 and 1:
 
 print(my_data.loc[[0, 1]])
+
+# Note: When using [], the result is a Pandas DataFrame.
+
+
+# Named Indexes
+# With the index argument, you can name your own indexes.
+# Add a list of names to give each row a name:
+
+print(pd.DataFrame(data, index = ['Day1', 'Day2', 'Day3']))
