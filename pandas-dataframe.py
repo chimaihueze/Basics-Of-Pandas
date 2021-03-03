@@ -16,3 +16,7 @@ print(my_data)
 #refer to the row index:
 
 print(my_data.loc[1])
+
+# Return rows 0 and 1:
+
+print(my_data.loc[[0, 1]])
