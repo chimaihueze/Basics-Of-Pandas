@@ -1,7 +1,14 @@
 # Data sets in Pandas are usually multi-dimensional tables, called DataFrames.
 # Series is like a column, a DataFrame is the whole table.
+# A DataFrame is a table.
+# It contains an array of individual entries, each of which has a certain value.
+# Each entry corresponds to a row (or record) and a column.
 
 import pandas as pd
+
+# For Example
+
+print(pd.DataFrame({'Yes': [10, 20], 'No': [30, 40], 'Maybe': [50, 60]}))
 
 # Create a DataFrame from two Series
 
@@ -36,3 +43,6 @@ print(my_data2)
 # Return "day2":
 
 print(my_data2.loc['Day2'])
+
+
+
