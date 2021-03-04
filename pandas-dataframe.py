@@ -10,6 +10,11 @@ import pandas as pd
 
 print(pd.DataFrame({'Yes': [10, 20], 'No': [30, 40], 'Maybe': [50, 60]}))
 
+# DataFrame entries are not limited to integers.
+# For instance, here's a DataFrame whose values are strings:
+
+print(pd.DataFrame({'Chima'}))
+
 # Create a DataFrame from two Series
 
 data = {'calories': [10, 15, 20], 'duration': [20, 40, 60]}
