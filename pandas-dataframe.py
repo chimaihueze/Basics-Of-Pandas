@@ -6,7 +6,7 @@ import pandas as pd
 # Create a DataFrame from two Series
 
 data = {'calories': [10, 15, 20], 'duration': [20, 40, 60]}
-my_data =pd.DataFrame(data)
+my_data = pd.DataFrame(data)
 print(my_data)
 
 # Locate Row
