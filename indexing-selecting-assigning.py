@@ -53,6 +53,11 @@ print(ab.iloc[1:3, 1])
 print(ab.iloc[[0, 1, 2, 3], 0])
 print(ab.iloc[[1, 2, 3, 4], 1])
 
+# Finally, it's worth knowing that negative numbers can be used in selection.
+# This will start counting forwards from the end of the values.
+# So for example here are the last five elements of the dataset.
+
+print(ab.iloc[-5:])
 
 
 
