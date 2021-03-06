@@ -9,9 +9,15 @@
 # Let's now set aside our toy datasets and see what a real dataset looks like when we read it into a DataFrame.
 # We'll use the pd.read_csv() function to read the data into a DataFrame. This goes thusly:
 
-import pandas as pd  
+import pandas as pd 
+
+# By default, when you print a DataFrame, you will only get the first 5 rows, and the last 5 rows:
 
 abc = pd.read_csv("pandas_data.csv")
+print(abc)
+
+# Use to_string() to print the entire DataFrame.
+
 print(abc.to_string())
 print(abc.shape)
 
