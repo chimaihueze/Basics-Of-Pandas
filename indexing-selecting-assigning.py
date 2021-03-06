@@ -27,6 +27,7 @@ print(ab['Maxpulse'][0])
 # For more advanced operations, these are the ones you're supposed to be using.
 
 print(ab.iloc[0])
+print(ab.iloc[1])
 
 # Both loc and iloc are row-first, column-second.
 # This is the opposite of what we do in native Python, which is column-first, row-second.
@@ -34,8 +35,25 @@ print(ab.iloc[0])
 # To get a column with iloc, we can do the following:
 
 print(ab.iloc[:, 0])
+print(ab.iloc[:, 1])
+print(ab.iloc[:, 2])
 
 # On its own, the : operator, which also comes from native Python, means "everything".
 # When combined with other selectors, however, it can be used to indicate a range of values.
-# For example, to select the country column from just the first, second, and third row, we would do:
+# For example, to select the Pulse column from just the first, second, and third row, we would do:
+
+print(ab.iloc[:3, 1])
+
+# Or, to select just the second and third entries, we would do:
+
+print(ab.iloc[1:3, 1])
+
+# It's also possible to pass a list:
+
+print(ab.iloc[[0, 1, 2, 3], 0])
+print(ab.iloc[[1, 2, 3, 4], 1])
+
+
+
+
 
