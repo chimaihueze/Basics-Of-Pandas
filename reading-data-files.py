@@ -27,3 +27,4 @@ print(abc.head())
 abcd = pd.read_csv("pandas_data.csv", index_col = 0)
 print(abcd)
 
+print(abcd.head())
