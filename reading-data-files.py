@@ -13,3 +13,9 @@ import pandas as pd
 
 abc = pd.read_csv("pandas_data.csv")
 print(abc.to_string())
+print(abc.shape)
+
+# So our new DataFrame has 169 records split across 4 different columns. That's about 676 entries!
+# We can examine the contents of the resultant DataFrame using the head() command, which grabs the first five rows:
+
+print(abc.head())
