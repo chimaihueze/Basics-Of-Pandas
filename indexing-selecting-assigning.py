@@ -19,3 +19,23 @@ print(ab['Maxpulse'])
 
 print(ab['Pulse'][0])
 print(ab['Maxpulse'][0])
+
+# Indexing in pandas
+# The indexing operator and attribute selection are nice because they work just like they do in the rest of the Python ecosystem.
+# As a novice, this makes them easy to pick up and use.
+# However, pandas has its own accessor operators, loc and iloc.
+# For more advanced operations, these are the ones you're supposed to be using.
+
+print(ab.iloc[0])
+
+# Both loc and iloc are row-first, column-second.
+# This is the opposite of what we do in native Python, which is column-first, row-second.
+# This means that it's marginally easier to retrieve rows, and marginally harder to get retrieve columns.
+# To get a column with iloc, we can do the following:
+
+print(ab.iloc[:, 0])
+
+# On its own, the : operator, which also comes from native Python, means "everything".
+# When combined with other selectors, however, it can be used to indicate a range of values.
+# For example, to select the country column from just the first, second, and third row, we would do:
+
