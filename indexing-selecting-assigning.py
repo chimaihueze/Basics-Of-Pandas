@@ -16,3 +16,6 @@ print(ab)
 
 print(ab['Pulse'])
 print(ab['Maxpulse'])
+
+print(ab['Pulse'][0])
+print(ab['Maxpulse'][0])
