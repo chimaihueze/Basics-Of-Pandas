@@ -30,6 +30,10 @@ print(abc.head())
 
 print(abc.head(10))
 
+# Print the last 5 rows of the DataFrame:
+
+print(abc.tail())
+
 # The pd.read_csv() function is well-endowed, with over 30 optional parameters you can specify.
 # For example, you can see in this dataset that the CSV file has a built-in index, which pandas did not pick up on automatically.
 # To make pandas use that column for the index (instead of creating a new one from scratch), we can specify an index_col.
@@ -37,3 +41,8 @@ print(abc.head(10))
 abcd = pd.read_csv("pandas_data.csv", index_col = 0)
 print(abcd)
 print(abcd.head())
+
+# Info About the Data
+# The DataFrames object has a method called info(), that gives you more information about the data set.
+
+print(abc.info())
