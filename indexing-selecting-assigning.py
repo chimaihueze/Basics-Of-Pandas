@@ -3,3 +3,7 @@
 
 import pandas as pd
 
+# Native Python objects provide good ways of indexing data.
+# Pandas carries all of these over, which helps make it easy to start with.
+
+
