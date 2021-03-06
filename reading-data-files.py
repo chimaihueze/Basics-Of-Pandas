@@ -19,3 +19,8 @@ print(abc.shape)
 # We can examine the contents of the resultant DataFrame using the head() command, which grabs the first five rows:
 
 print(abc.head())
+
+# The pd.read_csv() function is well-endowed, with over 30 optional parameters you can specify.
+# For example, you can see in this dataset that the CSV file has a built-in index, which pandas did not pick up on automatically.
+# To make pandas use that column for the index (instead of creating a new one from scratch), we can specify an index_col.
+
