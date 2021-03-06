@@ -24,3 +24,6 @@ print(abc.head())
 # For example, you can see in this dataset that the CSV file has a built-in index, which pandas did not pick up on automatically.
 # To make pandas use that column for the index (instead of creating a new one from scratch), we can specify an index_col.
 
+abcd = pd.read_csv("pandas_data.csv", index_col = 0)
+print(abcd)
+
