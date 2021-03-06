@@ -5,5 +5,9 @@
 # Data can be stored in any of a number of different forms and formats. 
 # By far the most basic of these is the humble CSV file.
 
+# So a CSV file is a table of values separated by commas. Hence the name: "Comma-Separated Values", or CSV.
+# Let's now set aside our toy datasets and see what a real dataset looks like when we read it into a DataFrame.
+# We'll use the pd.read_csv() function to read the data into a DataFrame. This goes thusly:
+
 import pandas as pd  
 
