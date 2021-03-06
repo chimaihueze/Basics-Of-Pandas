@@ -13,7 +13,7 @@ print(pd.DataFrame({'Yes': [10, 20], 'No': [30, 40], 'Maybe': [50, 60]}))
 # DataFrame entries are not limited to integers.
 # For instance, here's a DataFrame whose values are strings:
 
-print(pd.DataFrame({'Chima': ['Kingsley'], 'Onyinye': ['Esther'], 'Kosi': ['Cynthia']}))
+print(pd.DataFrame({'Chima': ['Kingsley'], 'Onyinye': ['Esther'], 'Kosi': ['Cynthia']}, index = ['First Name', 'Middle Name']))
 
 # Create a DataFrame from two Series
 
