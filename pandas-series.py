@@ -15,6 +15,7 @@ print(myvar)
 # This label can be used to access a specified value.
 
 print(myvar[1])
+print(myvar[2])
 
 # Create Labels
 # With the index argument, you can name your own labels.
