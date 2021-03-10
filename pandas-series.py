@@ -28,6 +28,7 @@ print(myvar2)
 # Return the value of "y":
 
 print(myvar2['y'])
+print(myvar2['x'])
 
 # Key/Value Objects as Series.
 # You can also use a key/value object, like a dictionary, when creating a Series.
