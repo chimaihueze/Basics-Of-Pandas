@@ -28,7 +28,7 @@ print(myvar2)
 
 print(myvar2['y'])
 
-# Key/Value Objects as Series
+# Key/Value Objects as Series.
 # You can also use a key/value object, like a dictionary, when creating a Series.
 # Create a simple Pandas Series from a dictionary:
 
