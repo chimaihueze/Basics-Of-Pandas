@@ -25,3 +25,8 @@ print(abc.loc[(abc.Pulse > 100) & (abc.Calories > 400.0)])
 # Suppose we want to check Pulse that's greater than 100 or Maxppulse greater than 130. For this we use a pipe (|):
 
 print(abc.loc[(abc.Pulse > 100) | (abc.Maxpulse > 130)]) 
+
+# Pandas comes with a few built-in conditional selectors, two of which we will highlight here.
+# The first is isin. isin lets you select data whose value "is in" a list of values.
+# For example, here's how we can use it to select wines only from Italy or France:
+
