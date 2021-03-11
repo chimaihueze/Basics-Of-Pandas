@@ -21,3 +21,7 @@ print(db)
 # We can use the ampersand (&) to bring the two questions together:
 
 print(abc.loc[(abc.Pulse > 100) & (abc.Calories > 400.0)])
+
+# Suppose we want to check Pulse that's greater than 100 or Maxppulse greater than 130. For this we use a pipe (|):
+
+print(abc.loc[(abc.Pulse > 100) | (abc.Maxpulse > 130)]) 
