@@ -5,3 +5,12 @@
 
 import pandas as pd
 
+abc = pd.read_csv("pandas_data.csv")
+
+print(abc.Pulse > 100)
+
+# This operation produced a Series of True/False booleans based on the country of each record. 
+# This result can then be used inside of loc to select the relevant data:
+
+db = abc.loc[abc.Pulse > 100]
+print(db)
