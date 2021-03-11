@@ -14,3 +14,10 @@ print(abc.Pulse > 100)
 
 db = abc.loc[abc.Pulse > 100]
 print(db)
+
+# This DataFrame has 110 rows. The original had 169. That means that around 65% of the Pulses are greater than 100.
+
+# We can also check for those Calories greater than 400.0
+# We can use the ampersand (&) to bring the two questions together:
+
+print(abc.loc[(abc.Pulse > 100) & (abc.Calories > 400.0)])
