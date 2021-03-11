@@ -5,5 +5,14 @@
 
 import pandas as pd
 
-abc = pd.reas_csv('pandas_data.csv')
+abc = pd.read_csv('pandas_data.csv')
 
+# Summary functions
+# Pandas provides many simple "summary functions" which restructure the data in some useful way.
+# For example, consider the describe() method:
+
+db = abc.Pulse.describe()
+print(db)
+
+de = abc.Maxpulse.describe()
+print(de)
