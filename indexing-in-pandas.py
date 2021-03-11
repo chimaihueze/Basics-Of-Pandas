@@ -6,7 +6,7 @@ import pandas as pd
 # Native Python objects provide good ways of indexing data.
 # Pandas carries all of these over, which helps make it easy to start with.
 
-ab = (pd.read_csv("pandas_data.csv"))
+ab = pd.read_csv("pandas_data.csv")
 print(ab)
 
 # In Python, we can access the property of an object by accessing it as an attribute.
