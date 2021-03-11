@@ -67,5 +67,9 @@ print(ab.iloc[-5:])
 print(ab.loc[0, 'Pulse'])
 print(ab.loc[1, 'Pulse'])
 
+# Choosing between loc and iloc
+# When choosing or transitioning between loc and iloc, there is one "gotcha" worth keeping in mind, which is that the two methods use slightly different indexing schemes.
+# iloc uses the Python stdlib indexing scheme, where the first element of the range is included and the last one excluded. So 0:10 will select entries 0,...,9. loc, meanwhile, indexes inclusively. So 0:10 will select entries 0,...,10.
+
 
 
