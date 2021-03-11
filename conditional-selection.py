@@ -31,3 +31,9 @@ print(abc.loc[(abc.Pulse > 100) | (abc.Maxpulse > 130)])
 # For example, here's how we can use it to select Pulses of 100 or 110:
 
 print(abc.loc[(abc.Pulse.isin([100, 110]))])
+
+# The second is isnull (and its companion notnull).
+# These methods let you highlight values which are (or are not) empty (NaN).
+# For example, to filter out Pulses lacking a value in the dataset, here's what we would do:
+
+print(abc.loc[abc.Pulse.isnull()])
