@@ -77,4 +77,8 @@ print(ab.loc[1, 'Pulse'])
 # Critically, the index we use is not immutable. 
 # We can manipulate the index in any way we see fit.
 # The set_index() method can be used to do the job.
-# Here is what happens when we set_index to the title field:
+# Here is what happens when we set_index to the Pulse field:
+
+print(ab.set_index('Pulse'))
+print(ab.set_index('Maxpulse'))
+print(ab.set_index('Calories'))
