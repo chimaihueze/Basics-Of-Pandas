@@ -72,4 +72,9 @@ print(ab.loc[1, 'Pulse'])
 # iloc uses the Python stdlib indexing scheme, where the first element of the range is included and the last one excluded. So 0:10 will select entries 0,...,9. loc, meanwhile, indexes inclusively. So 0:10 will select entries 0,...,10.
 
 
-
+# Manipulating the index
+# Label-based selection derives its power from the labels in the index.
+# Critically, the index we use is not immutable. 
+# We can manipulate the index in any way we see fit.
+# The set_index() method can be used to do the job.
+# Here is what happens when we set_index to the title field:
