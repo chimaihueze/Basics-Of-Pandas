@@ -6,7 +6,7 @@
 import pandas as pd
 
 abc = pd.read_csv('pandas_data.csv')
-
+print(abc)
 # Summary functions
 # Pandas provides many simple "summary functions" which restructure the data in some useful way.
 # For example, consider the describe() method:
