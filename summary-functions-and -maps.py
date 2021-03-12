@@ -60,3 +60,8 @@ print(abc.Pulse.map(lambda p: p - abcpulse_mean))
 
 # apply() is the equivalent method if we want to transform a whole DataFrame by calling a custom method on each row.
 
+def remean_Points(row):
+    row.Pulse = row.Pulse - abcpulse_mean
+    return row
+
+print(abc.apply(remean_Points, axis = 'columns'))
