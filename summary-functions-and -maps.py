@@ -16,3 +16,12 @@ print(db)
 
 de = abc.Maxpulse.describe()
 print(de)
+
+# This method generates a high-level summary of the attributes of the given column.
+# It is type-aware, meaning that its output changes based on the data type of the input.
+
+# If you want to get some particular simple summary statistic about a column in a DataFrame or a Series
+# There is usually a helpful pandas function that makes it happen.
+# For example, to see the mean of the points allotted (e.g. how well an averagely rated wine does), we can use the mean() function:
+
+print(abc.Pulse.mean())
