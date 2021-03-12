@@ -36,3 +36,8 @@ print(abc.Maxpulse.median())
 
 print(abc.Pulse.unique())
 print(abc.Maxpulse.unique())
+
+# To see a list of unique values and how often they occur in the dataset, we can use the value_counts() method:
+
+print(abc.Pulse.value_counts())
+print(abc.Maxpulse.value_counts())
