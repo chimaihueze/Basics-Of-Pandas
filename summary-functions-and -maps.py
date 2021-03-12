@@ -22,6 +22,12 @@ print(de)
 
 # If you want to get some particular simple summary statistic about a column in a DataFrame or a Series
 # There is usually a helpful pandas function that makes it happen.
-# For example, to see the mean of the points allotted (e.g. how well an averagely rated wine does), we can use the mean() function:
+# For example, to see the mean of the points allotted (e.g. how well an averagely rated Pulse, Maxpulse), we can use the mean() function:
 
 print(abc.Pulse.mean())
+print(abc.Maxpulse.mean())
+
+# For the median, we can use the median() function
+
+print(abc.Pulse.median())
+print(abc.Maxpulse.median())
