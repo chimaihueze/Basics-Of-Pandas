@@ -54,3 +54,9 @@ print(abc.Maxpulse.value_counts())
 
 abcpulse_mean = abc.Pulse.mean()
 print(abc.Pulse.map(lambda p: p - abcpulse_mean))
+
+# The function you pass to map() should expect a single value from the Series, and return a transformed version of that value.
+# map() returns a new Series where all the values have been transformed by your function.
+
+# apply() is the equivalent method if we want to transform a whole DataFrame by calling a custom method on each row.
+
