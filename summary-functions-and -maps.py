@@ -31,3 +31,8 @@ print(abc.Maxpulse.mean())
 
 print(abc.Pulse.median())
 print(abc.Maxpulse.median())
+
+# To see a list of unique values we can use the unique() function:
+
+print(abc.Pulse.unique())
+print(abc.Maxpulse.unique())
