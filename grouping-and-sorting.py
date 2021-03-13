@@ -14,9 +14,9 @@ abc = pd.read_csv('pandas_data.csv')
 print(abc.groupby('Pulse').Pulse.count())
 print(abc.groupby('Maxpulse').Maxpulse.count())
 
-# groupby() created a group of reviews which allotted the same point values to the given wines.
-# Then, for each of these groups, we grabbed the points() column and counted how many times it appeared.
+# groupby() created a group of reviews which allotted the same Pulse values.
+# Then, for each of these groups, we grabbed the Pulse() column and counted how many times it appeared.
 # value_counts() is just a shortcut to this groupby() operation.
 # We can use any of the summary functions we've used before with this data.
-# For example, to get the cheapest wine in each point value category, we can do the following:
+# For example, to get the cheapest wine in each Pulse value category, we can do the following:
 
