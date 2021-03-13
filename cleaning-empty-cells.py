@@ -35,9 +35,29 @@ print(abc.to_string())
 # Replace Only For a Specified Columns
 # The example above replaces all empty cells in the whole Data Frame.
 # To only replace empty values for one column, specify the column name for the DataFrame:
+
 # Example
 # Replace NULL values in the "Calories" columns with the number 10:
 
 abc = pd.read_csv("dirtydata.csv")
 abc['Calories'].fillna(10, inplace = True)
+print(abc.to_string())
+
+# Replace Using Mean, Median, or Mode
+# A common way to replace empty cells, is to calculate the mean, median or mode value of the column.
+# Pandas uses the mean() median() and mode() methods to calculate the respective values for a specified column:
+
+# Example
+# Calculate the MEAN, and replace any empty values with it:
+
+abc = pd.read_csv("dirtydata.csv")
+x = abc['Calories'].mean()
+abc['Calories'].fillna(x, inplace = True)
+print(abc.to_string())
+
+# Calculate the MEDIAN, and replace any empty values with it:
+
+abc = pd.read_csv("dirtydata.csv")
+y = abc['Calories'].median()
+abc['Calories'].fillna(y, inplace = True)
 print(abc.to_string())
