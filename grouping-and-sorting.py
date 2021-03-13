@@ -22,3 +22,4 @@ print(abc.groupby('Maxpulse').Maxpulse.count())
 
 print(abc.groupby('Pulse').Calories.min())
 
+
