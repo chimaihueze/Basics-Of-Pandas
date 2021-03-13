@@ -22,3 +22,22 @@ print(abc)
 abc.dropna(inplace = True)
 print(abc.to_string())
 print(abc)
+
+# Replace Empty Values
+# Another way of dealing with empty cells is to insert a new value instead.
+# This way you do not have to delete entire rows just because of some empty cells.
+# The fillna() method allows us to replace empty cells with a value:
+
+abc = pd.read_csv("dirtydata.csv")
+abc.fillna(1, inplace = True)
+print(abc.to_string())
+
+# Replace Only For a Specified Columns
+# The example above replaces all empty cells in the whole Data Frame.
+# To only replace empty values for one column, specify the column name for the DataFrame:
+# Example
+# Replace NULL values in the "Calories" columns with the number 10:
+
+abc = pd.read_csv("dirtydata.csv")
+abc['Calories'].fillna(10, inplace = True)
+print(abc.to_string())
