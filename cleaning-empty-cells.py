@@ -68,3 +68,4 @@ abc = pd.read_csv("dirtydata.csv")
 z = abc['Calories'].mode()[0]
 abc['Calories'].fillna(z, inplace = True)
 print(abc.to_string())
+
