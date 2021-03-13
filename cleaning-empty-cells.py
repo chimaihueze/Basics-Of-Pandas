@@ -61,3 +61,10 @@ abc = pd.read_csv("dirtydata.csv")
 y = abc['Calories'].median()
 abc['Calories'].fillna(y, inplace = True)
 print(abc.to_string())
+
+# Calculate the MODE, and replace any empty values with it:
+
+abc = pd.read_csv("dirtydata.csv")
+z = abc['Calories'].mode()[0]
+abc['Calories'].fillna(z, inplace = True)
+print(abc.to_string())
