@@ -79,3 +79,8 @@ print(abc.head(1))
 abcpulse_mean = abc.Pulse.mean()
 remean_Pulse = abc.Pulse - abcpulse_mean
 print(remean_Pulse)
+
+# In this code we are performing an operation between a lot of values on the left-hand side (everything in the Series) and a single value on the right-hand side (the mean value).
+# Pandas looks at this expression and figures out that we must mean to subtract that mean value from every value in the dataset.
+# Pandas will also understand what to do if we perform these operations between Series of equal length.
+# For example, an easy way of combining country and region information in the dataset would be to do the following:
