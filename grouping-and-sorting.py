@@ -18,5 +18,7 @@ print(abc.groupby('Maxpulse').Maxpulse.count())
 # Then, for each of these groups, we grabbed the Pulse() column and counted how many times it appeared.
 # value_counts() is just a shortcut to this groupby() operation.
 # We can use any of the summary functions we've used before with this data.
-# For example, to get the cheapest wine in each Pulse value category, we can do the following:
+# For example, to get the lowest Calories in each Pulse value category, we can do the following:
+
+print(abc.groupby('Pulse').Calories.min())
 
