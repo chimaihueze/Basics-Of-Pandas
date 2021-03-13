@@ -6,6 +6,8 @@
 import pandas as pd
 
 abc = pd.read_csv("dirtydata.csv")
+abc['Date'] = pd.to_datetime(abc['Date'])
+abc.dropna(subset=['Date'], inplace = True)
 
 # How can we fix wrong values, like the one for "Duration" in row 7?
 # Replacing Values
