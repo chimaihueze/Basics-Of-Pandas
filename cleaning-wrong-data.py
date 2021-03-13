@@ -7,3 +7,7 @@ import pandas as pd
 
 abc = pd.read_csv("dirtydata.csv")
 
+# How can we fix wrong values, like the one for "Duration" in row 7?
+# Replacing Values
+# One way to fix wrong values is to replace them with something else.
+# In our example, it is most likely a typo, and the value should be "45" instead of "450", and we could just insert "45" in row 7:
