@@ -7,3 +7,8 @@ import pandas as pd
 
 abc = pd.read_csv('pandas_data.csv')
 
+# Groupwise analysis
+# One function we've been using heavily thus far is the value_counts() function. 
+# We can replicate what value_counts() does by doing the following:
+
+print(abc.groupby('Pulse').Pulse.count())
