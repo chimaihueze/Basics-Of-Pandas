@@ -9,3 +9,16 @@
 
 import pandas as pd
 
+abc = pd.read_csv("dirtydata.csv")
+new_abc = abc.dropna()
+print(new_abc.to_string())
+
+# By default, the dropna() method returns a new DataFrame, and will not change the original.
+
+print(abc)
+
+# If you want to change the original DataFrame, use the inplace = True argument:
+
+abc.dropna(inplace = True)
+print(abc.to_string())
+print(abc)
