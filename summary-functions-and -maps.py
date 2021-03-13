@@ -72,3 +72,10 @@ print(abc.apply(remean_Points, axis = 'columns'))
 # If we look at the first row of abc, we can see that it still has its original points value.
 
 print(abc.head(1))
+
+# Pandas provides many common mapping operations as built-ins.
+# For example, here's a faster way of remeaning our Pulse column:
+
+abcpulse_mean = abc.Pulse.mean()
+remean_Pulse = abc.Pulse - abcpulse_mean
+print(remean_Pulse)
