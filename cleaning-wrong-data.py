@@ -11,3 +11,6 @@ abc = pd.read_csv("dirtydata.csv")
 # Replacing Values
 # One way to fix wrong values is to replace them with something else.
 # In our example, it is most likely a typo, and the value should be "45" instead of "450", and we could just insert "45" in row 7:
+
+abc.loc[7, 'Duration'] = 45
+print(abc.to_string)
