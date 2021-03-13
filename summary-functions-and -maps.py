@@ -68,4 +68,7 @@ print(abc.apply(remean_Points, axis = 'columns'))
 
 # If we had called abc.apply() with axis='index', then instead of passing a function to transform each row, we would need to give a function to transform each column.
 # Note that map() and apply() return new, transformed Series and DataFrames, respectively.
-# They don't modify the original data they're called on. If we look at the first row of abc, we can see that it still has its original points value.
+# They don't modify the original data they're called on.
+# If we look at the first row of abc, we can see that it still has its original points value.
+
+print(abc.head(1))
