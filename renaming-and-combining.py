@@ -22,7 +22,10 @@ print(dc)
 # You'll probably rename columns very often, but rename index values very rarely.
 # For that, set_index() is usually more convenient.
 # Both the row index and the column index can have their own name attribute.
-# The complimentary rename_axis() method may be used to change these names. For example:
+# The complimentary rename_axis() method may be used to change these names.
+
+de = abc.rename_axis("Values", axis = "rows").rename_axis("Title", axis = "columns")
+print(de)
 
 
 
