@@ -16,6 +16,9 @@ print(db)
 # It supports a variety of input formats, but usually a Python dictionary is the most convenient.
 # Here is an example using it to rename some elements of the index.
 
+dc = abc.rename(index = {0: 'value1', 1: 'value2'})
+print(dc)
+
 
 
 
