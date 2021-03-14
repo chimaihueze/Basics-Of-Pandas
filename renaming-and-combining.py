@@ -38,9 +38,15 @@ print(de)
 # Given a list of elements, this function will smush those elements together along an axis.
 
 can_youtube = pd.read_csv("ca_videos.csv")
-gb_youtube = pd.read_csv("ca_videos.csv")
+gb_youtube = pd.read_csv("gb_videos.csv")
 
 print(pd.concat([can_youtube, gb_youtube]))
+
+# The middlemost combiner in terms of complexity is join().
+# join() lets you combine different DataFrame objects which have an index in common.
+# For example, to pull down videos that happened to be trending on the same day in both Canada and the UK, we could do the following:
+
+
 
 
 
