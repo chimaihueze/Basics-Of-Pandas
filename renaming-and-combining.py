@@ -28,5 +28,15 @@ de = abc.rename_axis("Values", axis = "rows").rename_axis("Title", axis = "colum
 print(de)
 
 
+# Combining
+# When performing operations on a dataset, we will sometimes need to combine different DataFrames and/or Series in non-trivial ways.
+# Pandas has three core methods for doing this.
+# In order of increasing complexity, these are concat(), join(), and merge().
+# Most of what merge() can do can also be done more simply with join(), so we will omit it and focus on the first two functions here.
+# The simplest combining method is concat().
+# Given a list of elements, this function will smush those elements together along an axis.
+
+
+
 
 
