@@ -32,9 +32,15 @@ print(de)
 # When performing operations on a dataset, we will sometimes need to combine different DataFrames and/or Series in non-trivial ways.
 # Pandas has three core methods for doing this.
 # In order of increasing complexity, these are concat(), join(), and merge().
+
 # Most of what merge() can do can also be done more simply with join(), so we will omit it and focus on the first two functions here.
 # The simplest combining method is concat().
 # Given a list of elements, this function will smush those elements together along an axis.
+
+can_youtube = pd.read_csv("ca_videos.csv")
+gb_youtube = pd.read_csv("ca_videos.csv")
+
+print(pd.concat([can_youtube, gb_youtube]))
 
 
 
