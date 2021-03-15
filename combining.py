@@ -26,6 +26,10 @@ right = gb_youtube.set_index(['title', 'trending_date'])
 ab = left.join(right, lsuffix = '_CAN', rsuffix = '_UK')
 print(ab)
 
+# Merge both datasets on the trending_table column
+
+print(pd.merge(left, right, on = 'trending_date'))
+
 
 
 
