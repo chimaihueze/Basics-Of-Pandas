@@ -39,6 +39,8 @@ print(de)
 
 can_youtube = pd.read_csv("ca_videos.csv")
 gb_youtube = pd.read_csv("gb_videos.csv")
+print(can_youtube)
+print(gb_youtube)
 
 print(pd.concat([can_youtube, gb_youtube]))
 
@@ -46,6 +48,11 @@ print(pd.concat([can_youtube, gb_youtube]))
 # join() lets you combine different DataFrame objects which have an index in common.
 # For example, to pull down videos that happened to be trending on the same day in both Canada and the UK, we could do the following:
 
+left = can_youtube.set_index(['title', 'trending_date'])
+right = gb_youtube.set_index(['title', 'trending_date'])
+
+ab = left.join(right, lsuffix = '_CAN', rsuffix = '_GB')
+print(ab)
 
 
 
