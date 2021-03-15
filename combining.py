@@ -34,6 +34,13 @@ print(pd.merge(left, right, on = 'trending_date'))
 
 print(pd.merge(left, right, on = ['trending_date', 'views']))
 
+# Merge Using 'how' Argument
+# The how argument to merge specifies how to determine which keys are to be included in the resulting table. 
+# If a key combination does not appear in either the left or the right tables, the values in the joined table will be NA.
+
+print(pd.merge(left, right, on = 'trending_date', how = 'left'))
+print(pd.merge(left, right, on = 'trending_date', how = 'right'))
+
 
 
 
