@@ -11,10 +11,10 @@ import pandas as pd
 
 can_youtube = pd.read_csv("ca_videos.csv")
 gb_youtube = pd.read_csv("gb_videos.csv")
-# print(can_youtube)
-# print(gb_youtube)
+print(can_youtube)
+print(gb_youtube)
 
-# print(pd.concat([can_youtube, gb_youtube]))
+print(pd.concat([can_youtube, gb_youtube]))
 
 # The middlemost combiner in terms of complexity is join().
 # join() lets you combine different DataFrame objects which have an index in common.
@@ -23,7 +23,7 @@ gb_youtube = pd.read_csv("gb_videos.csv")
 left = can_youtube.set_index(['title', 'trending_date'])
 right = gb_youtube.set_index(['title', 'trending_date'])
 
-ab = left.join(right, lsuffix = '_CAN', rsuffix = '_GB')
+ab = left.join(right, lsuffix = '_CAN', rsuffix = '_UK')
 print(ab)
 
 
