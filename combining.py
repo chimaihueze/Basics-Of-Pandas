@@ -30,6 +30,10 @@ print(ab)
 
 print(pd.merge(left, right, on = 'trending_date'))
 
+# Merge both datasets on multiple keys 
+
+print(pd.merge(left, right, on = ['trending_date', 'views']))
+
 
 
 
