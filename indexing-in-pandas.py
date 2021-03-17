@@ -66,6 +66,7 @@ print(ab.iloc[-5:])
 
 print(ab.loc[0, 'Pulse'])
 print(ab.loc[1, 'Pulse'])
+print(ab.loc[2, 'Pulse'])
 
 # Choosing between loc and iloc
 # When choosing or transitioning between loc and iloc, there is one "gotcha" worth keeping in mind, which is that the two methods use slightly different indexing schemes.
