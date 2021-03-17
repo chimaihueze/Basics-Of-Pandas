@@ -59,7 +59,6 @@ print(ab.iloc[[1, 2, 3, 4], 1])
 
 print(ab.iloc[-5:])
 
-
 # Label-based selection
 # The second paradigm for attribute selection is the one followed by the loc operator: label-based selection.
 # In this paradigm, it's the data index value, not its position, which matters.
